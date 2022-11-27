@@ -1,11 +1,13 @@
 ---
+import { SEO } from 'astro-seo';
 import '@fontsource/material-icons-outlined';
 
 export interface Props {
     title: string;
+    description: string;
 }
 
-const { title } = Astro.props;
+const { title, description } = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -18,7 +20,11 @@ const { title } = Astro.props;
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
         <link rel="manifest" href="/site.webmanifest" />
         <meta name="generator" content={Astro.generator} />
-        <title>{title}</title>
+        <SEO
+            title={title}
+            description={description}
+            twitter={{ card: 'summary', site: 'katsuragawaa.github.io', creator: '@batatapalhaco' }}
+        />
     </head>
     <body class="bg-neutral-100 text-sm leading-6 dark:bg-neutral-900 dark:text-white">
         <nav class="top-0 z-10 flex h-16 w-full items-center justify-between px-8 md:sticky lg:px-24">
@@ -32,28 +38,28 @@ const { title } = Astro.props;
             © 2022 Copyright:
             <a href="/" class="hover:underline">katsuragawaa.github.io</a>
         </footer>
+        <style is:global>
+            @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+            html {
+                font-family: 'Space Grotesk', system-ui, sans-serif;
+            }
+            code {
+                font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono,
+                    Courier New, monospace;
+            }
+        </style>
+        <script>
+            if (localStorage.getItem('dark-mode') == 'true') {
+                document.documentElement.classList.add('dark');
+            } else {
+                document.documentElement.classList.remove('dark');
+            }
+
+            const btn = document.querySelector('#mode') as Element;
+            btn.addEventListener('click', function (e) {
+                document.documentElement.classList.toggle('dark');
+                localStorage.setItem('dark-mode', localStorage.getItem('dark-mode') == 'true' ? 'false' : 'true');
+            });
+        </script>
     </body>
 </html>
-<style is:global>
-    @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
-    html {
-        font-family: 'Space Grotesk', system-ui, sans-serif;
-    }
-    code {
-        font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono,
-            Courier New, monospace;
-    }
-</style>
-<script>
-    if (localStorage.getItem('dark-mode') == 'true') {
-        document.documentElement.classList.add('dark');
-    } else {
-        document.documentElement.classList.remove('dark');
-    }
-
-    const btn = document.querySelector('#mode') as Element;
-    btn.addEventListener('click', function (e) {
-        document.documentElement.classList.toggle('dark');
-        localStorage.setItem('dark-mode', localStorage.getItem('dark-mode') == 'true' ? 'false' : 'true');
-    });
-</script>
