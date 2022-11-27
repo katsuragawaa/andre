@@ -28,7 +28,10 @@ const { title } = Astro.props;
         <main class="m-auto max-w-xl px-6 py-24">
             <slot />
         </main>
-        <footer class="flex h-16 items-center justify-center">footer</footer>
+        <footer class="mb-8 flex h-16 items-center justify-center gap-1 opacity-50">
+            © 2022 Copyright:
+            <a href="/" class="hover:underline">katsuragawaa.github.io</a>
+        </footer>
     </body>
 </html>
 <style is:global>
