@@ -2,13 +2,14 @@
 import { Image } from '@astrojs/image/components';
 import Layout from '../layouts/Layout.astro';
 import Job from '../components/Job.astro';
-import profileImg from '../assets/pic.png';
 ---
 
 <Layout title="Katsuragawa • Software Engineer">
     <section class="mb-14 grid grid-cols-4 grid-rows-1 gap-x-4">
         <Image
-            src={profileImg}
+            src="profile.png"
+            height="612"
+            aspectRatio="1:1"
             alt="profile picture"
             format="webp"
             class="rounded-full bg-neutral-50 row-span-2 hover:scale-105 transition-all"
@@ -31,18 +32,25 @@ import profileImg from '../assets/pic.png';
 
     <section class="mb-14">
         <h2 class="mb-6">Work Experience</h2>
-        <Job />
+        <Job
+            title="Software Engineer - Mercado Livre"
+            link="/experiences/meli"
+            years="2022 - now"
+            description="Creation of a new back office products for distribution centers throughout Latin America."
+            tech="React • Java • Golang • Python"
+        />
         <br />
-        <Job />
-        <br />
-        <Job />
     </section>
 
     <section class="mb-14">
         <h2 class="mb-6">Side Projects</h2>
-        <Job />
-        <br />
-        <Job />
+        <Job
+            title="Software Engineer - Mercado Livre"
+            link="/experiences/meli"
+            years="2022 - now"
+            description="Creation of a new back office products for distribution centers throughout Latin America. In an agile environment, using Test Driven Development to build features as per requirements and an Object-Oriented code. Everyday use of Git and automated deployment with CI/CD, containerized local development environment with Docker. Code review as a standard process before deploy, aiming at developing clean code and respecting SOLID principles."
+            tech="React • Java • Go"
+        />
     </section>
 
     <section>

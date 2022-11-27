@@ -1,5 +1,5 @@
 ---
-import '@fontsource/material-icons';
+import '@fontsource/material-icons-outlined';
 
 export interface Props {
     title: string;
@@ -20,7 +20,7 @@ const { title } = Astro.props;
     <body class="bg-neutral-100 text-sm leading-6 dark:bg-neutral-900 dark:text-white">
         <nav class="top-0 z-10 flex h-16 w-full items-center justify-between px-8 md:sticky lg:px-24">
             <a href="/" class="">Home</a>
-            <div class="material-icons cursor-pointer" id="mode">dark_mode</div>
+            <div class="material-icons-outlined cursor-pointer" id="mode">dark_mode</div>
         </nav>
         <main class="m-auto max-w-xl px-6 py-24">
             <slot />
