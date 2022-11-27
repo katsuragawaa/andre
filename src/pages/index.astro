@@ -12,7 +12,7 @@ import ArrowLink from '../components/ArrowLink.astro';
             height="612"
             aspectRatio="1:1"
             alt="profile picture"
-            class="rounded-full bg-neutral-50 row-span-2 hover:scale-105 transition-all"
+            class="rounded-full h-24 w-24 bg-neutral-50 row-span-2 hover:scale-110 duration-300 transition-all"
         />
         <div class="col-span-3 col-start-2 flex flex-col justify-center">
             <h1 class="text-2xl font-semibold">Andre Katsuragawa</h1>
@@ -24,8 +24,8 @@ import ArrowLink from '../components/ArrowLink.astro';
     <section class="mb-16">
         <h2 class="mb-8">About</h2>
         <p class="opacity-75">
-            Hello~ I'm Andre. I enjoy building dynamic, creative products from start to finish. Focused on developing
-            intuitive experiences that constantly grow and improve based on user metrics.
+            I enjoy building dynamic, creative products from start to finish. Focused on developing intuitive
+            experiences that constantly grow and improve based on user metrics.
             <span class="">Always shipping.</span>
         </p>
     </section>
@@ -49,14 +49,12 @@ import ArrowLink from '../components/ArrowLink.astro';
             />
             <Project
                 title="Front End Developer • Freelancer"
-                link="/experiences/freelancer"
                 years="2019 - 2020"
                 description="Development of UI components using the React library, consuming API through REST and/or GraphQL."
                 tech="React • Redux • Styled Components • Framer Motion"
             />
             <Project
                 title="Trainee • Tecza"
-                link="/experiences/tecza"
                 years="2018 - 2019"
                 description="Support in overseeing the development of the construction management platform"
                 tech="Javascript • Python • Flask"
@@ -104,7 +102,7 @@ import ArrowLink from '../components/ArrowLink.astro';
 
     <section>
         <h2 class="mb-8">Links</h2>
-        <div class="grid grid-cols-4 grid-rows-2 gap-y-2 gap-x-4">
+        <div class="grid grid-cols-4 grid-rows-2 gap-4">
             <div class="opacity-50">GitHub</div>
             <a
                 href="https://github.com/katsuragawaa"

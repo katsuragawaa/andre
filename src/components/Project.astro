@@ -4,7 +4,7 @@ import ArrowLink from './ArrowLink.astro';
 
 export interface Props {
     title: string;
-    link: string;
+    link?: string;
     target?: '_blank';
     description: string;
     years: string;
@@ -17,9 +17,18 @@ const { title, link, target, description, years, tech } = Astro.props;
 <div class="grid grid-cols-4 grid-rows-1 gap-x-4">
     <div class="opacity-50">{years}</div>
     <div class="col-span-3 col-start-2 flex flex-col gap-2">
-        <a href={link} target={target} class="flex items-center gap-1 hover:underline"
-            >{title}<span class="mt-px"><ArrowLink /></span>
-        </a>
+        {
+            link ? (
+                <a href={link} target={target} class="flex items-center gap-1 hover:underline">
+                    {title}
+                    <span class="mt-px">
+                        <ArrowLink />
+                    </span>
+                </a>
+            ) : (
+                title
+            )
+        }
         <p class="opacity-75">{description}</p>
         <div class="opacity-50">{tech}</div>
     </div>
