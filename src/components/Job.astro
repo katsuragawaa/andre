@@ -1,6 +1,6 @@
 ---
-import '@fontsource/material-icons-outlined';
-import ArrowLink from './ArrowLink.astro';
+import "@fontsource/material-icons-outlined";
+import ArrowLink from "./ArrowLink.astro";
 
 export interface Props {
     title: string;
@@ -14,7 +14,7 @@ const { title, link, description, years, tech } = Astro.props;
 ---
 
 <div class="grid grid-cols-4 grid-rows-1 gap-x-4">
-    <div class="opacity-75">{years}</div>
+    <div class="opacity-50">{years}</div>
     <div class="col-span-3 col-start-2 flex flex-col gap-2">
         <a href={link} class="flex items-center gap-1 hover:underline"
             >{title}<span class="mt-px"><ArrowLink /></span>

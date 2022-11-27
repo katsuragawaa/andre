@@ -21,8 +21,8 @@ import Job from '../components/Job.astro';
         </div>
     </section>
 
-    <section class="mb-14">
-        <h2 class="mb-6">About</h2>
+    <section class="mb-16">
+        <h2 class="mb-8">About</h2>
         <p class="opacity-75">
             Hello~ I'm Andre. I enjoy building dynamic, creative products from start to finish. Focused on developing
             intuitive experiences that constantly grow and improve based on user metrics.
@@ -30,20 +30,42 @@ import Job from '../components/Job.astro';
         </p>
     </section>
 
-    <section class="mb-14">
-        <h2 class="mb-6">Work Experience</h2>
-        <Job
-            title="Software Engineer - Mercado Livre"
-            link="/experiences/meli"
-            years="2022 - now"
-            description="Creation of a new back office products for distribution centers throughout Latin America."
-            tech="React • Java • Golang • Python"
-        />
-        <br />
+    <section class="mb-16">
+        <h2 class="mb-8">Work Experience</h2>
+        <div class="flex flex-col gap-8">
+            <Job
+                title="Software Engineer • Mercado Livre"
+                link="/experiences/meli"
+                years="2022 - now"
+                description="Created new back office products for distribution centers across Latin America, used by analysts to optimize logistics and reduce costs."
+                tech="React • Java • Golang • Python"
+            />
+            <Job
+                title="Full Stack Developer • Prevision"
+                link="/experiences/prevision"
+                years="2020 - 2022"
+                description="Development of a web-based application for visual planning using the Lean Construction methodology, which was utilized by thousands of construction companies nationwide."
+                tech="Vue • Ruby on Rails • GraphQL"
+            />
+            <Job
+                title="Front End Developer • Freelancer"
+                link="/experiences/freelancer"
+                years="2019 - 2020"
+                description="Development of UI components using the ReactJS library, consuming API through REST and/or GraphQL."
+                tech="React • Redux • Styled Components • Framer Motion"
+            />
+            <Job
+                title="Trainee • Tecza"
+                link="/experiences/tecza"
+                years="2018 - 2019"
+                description="Support in overseeing the development of the construction management platform"
+                tech="Javascript • Python • Flask"
+            />
+        </div>
     </section>
 
-    <section class="mb-14">
-        <h2 class="mb-6">Side Projects</h2>
+    <section class="mb-16">
+        <h2 class="mb-8">Side Projects</h2>
         <Job
             title="Software Engineer - Mercado Livre"
             link="/experiences/meli"
@@ -54,7 +76,7 @@ import Job from '../components/Job.astro';
     </section>
 
     <section>
-        <h2 class="mb-6">Links</h2>
+        <h2 class="mb-8">Links</h2>
         <div class="grid grid-cols-4 grid-rows-2 gap-y-2 gap-x-4">
             <div class="opacity-50">GitHub</div>
             <div class="col-span-3 col-start-2 flex flex-col gap-2">@katsuragawaa</div>
