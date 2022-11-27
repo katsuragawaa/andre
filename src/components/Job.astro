@@ -1,22 +1,25 @@
 ---
+import '@fontsource/material-icons-outlined';
+import ArrowLink from './ArrowLink.astro';
+
 export interface Props {
-    title?: string;
+    title: string;
+    link: string;
+    description: string;
+    years: string;
+    tech: string;
 }
 
-const { title } = Astro.props;
+const { title, link, description, years, tech } = Astro.props;
 ---
 
 <div class="grid grid-cols-4 grid-rows-1 gap-x-4">
-    <div class="opacity-75">2022 - now</div>
+    <div class="opacity-75">{years}</div>
     <div class="col-span-3 col-start-2 flex flex-col gap-2">
-        <div>Software Engineer - Mercado Livre</div>
-        <p class="opacity-75">
-            Creation of a new back office products for distribution centers throughout Latin America. In an agile
-            environment, using Test Driven Development to build features as per requirements and an Object-Oriented
-            code. Everyday use of Git and automated deployment with CI/CD, containerized local development environment
-            with Docker. Code review as a standard process before deploy, aiming at developing clean code and respecting
-            SOLID principles.
-        </p>
-        <div class="opacity-50">React • Java • Go</div>
+        <a href={link} class="flex items-center gap-1 hover:underline"
+            >{title}<span class="mt-px"><ArrowLink /></span>
+        </a>
+        <p class="opacity-75">{description}</p>
+        <div class="opacity-50">{tech}</div>
     </div>
 </div>
