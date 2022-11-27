@@ -1,7 +1,8 @@
 ---
 import { Image } from '@astrojs/image/components';
 import Layout from '../layouts/Layout.astro';
-import Job from '../components/Job.astro';
+import Project from '../components/Project.astro';
+import ArrowLink from '../components/ArrowLink.astro';
 ---
 
 <Layout title="Katsuragawa • Software Engineer">
@@ -32,28 +33,28 @@ import Job from '../components/Job.astro';
     <section class="mb-16">
         <h2 class="mb-8">Work Experience</h2>
         <div class="flex flex-col gap-8">
-            <Job
+            <Project
                 title="Software Engineer • Mercado Livre"
                 link="/experiences/meli"
                 years="2022 - now"
                 description="Created new back office products for distribution centers across Latin America, used by analysts to optimize logistics and reduce costs."
                 tech="React • Java • Golang • Python"
             />
-            <Job
+            <Project
                 title="Full Stack Developer • Prevision"
                 link="/experiences/prevision"
                 years="2020 - 2022"
                 description="Development of a web-based application for visual planning using the Lean Construction methodology, which was utilized by thousands of construction companies nationwide."
                 tech="Vue • Ruby on Rails • GraphQL"
             />
-            <Job
+            <Project
                 title="Front End Developer • Freelancer"
                 link="/experiences/freelancer"
                 years="2019 - 2020"
-                description="Development of UI components using the ReactJS library, consuming API through REST and/or GraphQL."
+                description="Development of UI components using the React library, consuming API through REST and/or GraphQL."
                 tech="React • Redux • Styled Components • Framer Motion"
             />
-            <Job
+            <Project
                 title="Trainee • Tecza"
                 link="/experiences/tecza"
                 years="2018 - 2019"
@@ -65,22 +66,61 @@ import Job from '../components/Job.astro';
 
     <section class="mb-16">
         <h2 class="mb-8">Side Projects</h2>
-        <Job
-            title="Software Engineer - Mercado Livre"
-            link="/experiences/meli"
-            years="2022 - now"
-            description="Creation of a new back office products for distribution centers throughout Latin America. In an agile environment, using Test Driven Development to build features as per requirements and an Object-Oriented code. Everyday use of Git and automated deployment with CI/CD, containerized local development environment with Docker. Code review as a standard process before deploy, aiming at developing clean code and respecting SOLID principles."
-            tech="React • Java • Go"
-        />
+        <div class="flex flex-col gap-8">
+            <Project
+                title="Nextree"
+                link="https://nextree.vercel.app/"
+                target="_blank"
+                years="2022"
+                description="A tree-like app that helps you visualize and create your perfect folder structure."
+                tech="Next.js • Typescript"
+            />
+            <Project
+                title="Krypt"
+                link="https://github.com/katsuragawaa/krypt-web3.0"
+                target="_blank"
+                years="2021"
+                description="A web 3.0 blockchain application to send crypto with a GIF."
+                tech="React • Vite • Solidity"
+            />
+            <Project
+                title="Payflow"
+                link="https://github.com/katsuragawaa/payflow"
+                target="_blank"
+                years="2021"
+                description="Mobile application for managing bills."
+                tech="Flutter • Firebase"
+            />
+            <Project
+                title="Letmeask"
+                link="https://github.com/katsuragawaa/letmeask-web"
+                target="_blank"
+                years="2020"
+                description="Web application to facilitate Q&A sessions during livestreams"
+                tech="React • Typescript • Firebase"
+            />
+        </div>
     </section>
 
     <section>
         <h2 class="mb-8">Links</h2>
         <div class="grid grid-cols-4 grid-rows-2 gap-y-2 gap-x-4">
             <div class="opacity-50">GitHub</div>
-            <div class="col-span-3 col-start-2 flex flex-col gap-2">@katsuragawaa</div>
+            <a
+                href="https://github.com/katsuragawaa"
+                target="_blank"
+                class="col-span-3 col-start-2 flex items-center gap-1 hover:underline"
+                >@katsuragawaa
+                <ArrowLink />
+            </a>
             <div class="opacity-50">LinkedIn</div>
-            <div class="col-span-3 col-start-2 flex flex-col gap-2">@katsuragawaa</div>
+            <a
+                href="https://www.linkedin.com/in/andrekatsuragawa/"
+                target="_blank"
+                class="col-span-3 col-start-2 flex items-center gap-1 hover:underline"
+                >@andrekatsuragawa
+                <ArrowLink />
+            </a>
         </div>
     </section>
 </Layout>
