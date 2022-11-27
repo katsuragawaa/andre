@@ -1,83 +1,59 @@
 ---
+import { Image } from '@astrojs/image/components';
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
-import Hello from '../components/Hello';
+import Job from '../components/Job.astro';
+import profileImg from '../assets/profile.jpg';
 ---
 
 <Layout title="Welcome to Astro.">
-    <main>
-        <Hello />
-        <h1>Welcome to <span class="text-gradient">Astro</span></h1>
-        <p class="instructions">
-            To get started, open the directory <code>src/pages</code> in your project.<br />
-            <strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-        </p>
-        <ul role="list" class="link-card-grid">
-            <Card
-                href="https://docs.astro.build/"
-                title="Documentation"
-                body="Learn how Astro works and explore the official API docs."
+    <main class="m-auto max-w-xl px-6 py-32">
+        <section class="mb-14 grid grid-cols-4 grid-rows-1 gap-x-4">
+            <Image
+                src={profileImg}
+                alt="profile picture"
+                format="webp"
+                class="rounded-full row-span-2 hover:scale-105 transition-all"
             />
-            <Card
-                href="https://astro.build/integrations/"
-                title="Integrations"
-                body="Supercharge your project with new frameworks and libraries."
-            />
-            <Card
-                href="https://astro.build/themes/"
-                title="Themes"
-                body="Explore a galaxy of community-built starter themes."
-            />
-            <Card
-                href="https://astro.build/chat/"
-                title="Community"
-                body="Come say hi to our amazing Discord community. ❤️"
-            />
-        </ul>
+            <div class="col-span-3 col-start-2 flex flex-col justify-center">
+                <h1 class="text-2xl font-semibold">Andre Katsuragawa</h1>
+                <div class="opacity-75">Product-focused Software Engineer</div>
+                <p class="opacity-50">I build things.</p>
+            </div>
+        </section>
+
+        <section class="mb-14">
+            <h2 class="mb-6">About</h2>
+            <p class="opacity-75">
+                Hello~ I'm Andre. I enjoy building dynamic, creative products from start to finish. Focused on
+                developing intuitive experiences that constantly grow and improve based on user metrics.
+                <span class="">Always shipping.</span>
+            </p>
+        </section>
+
+        <section class="mb-14">
+            <h2 class="mb-6">Work Experience</h2>
+            <Job />
+            <br />
+            <Job />
+            <br />
+            <Job />
+        </section>
+
+        <section class="mb-14">
+            <h2 class="mb-6">Side Projects</h2>
+            <Job />
+            <br />
+            <Job />
+        </section>
+
+        <section>
+            <h2 class="mb-6">Links</h2>
+            <div class="grid grid-cols-4 grid-rows-2 gap-y-2 gap-x-4">
+                <div class="opacity-50">GitHub</div>
+                <div class="col-span-3 col-start-2 flex flex-col gap-2">@katsuragawaa</div>
+                <div class="opacity-50">LinkedIn</div>
+                <div class="col-span-3 col-start-2 flex flex-col gap-2">@katsuragawaa</div>
+            </div>
+        </section>
     </main>
 </Layout>
-
-<style>
-    main {
-        margin: auto;
-        padding: 1.5rem;
-        max-width: 60ch;
-    }
-    h1 {
-        font-size: 3rem;
-        font-weight: 700;
-        margin: 0;
-    }
-    .text-gradient {
-        background-image: var(--accent-gradient);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-size: 400%;
-        background-position: 0%;
-    }
-    .instructions {
-        line-height: 1.6;
-        margin: 1rem 0;
-        border: 1px solid rgba(var(--accent), 25%);
-        background-color: white;
-        padding: 1rem;
-        border-radius: 0.4rem;
-    }
-    .instructions code {
-        font-size: 0.875em;
-        font-weight: bold;
-        background: rgba(var(--accent), 12%);
-        color: rgb(var(--accent));
-        border-radius: 4px;
-        padding: 0.3em 0.45em;
-    }
-    .instructions strong {
-        color: rgb(var(--accent));
-    }
-    .link-card-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-        gap: 1rem;
-        padding: 0;
-    }
-</style>
