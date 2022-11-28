@@ -24,6 +24,19 @@ const { title, description } = Astro.props;
             title={title}
             description={description}
             twitter={{ card: 'summary', site: 'katsuragawaa.github.io', creator: '@batatapalhaco' }}
+            openGraph={{
+                basic: {
+                    type: 'website',
+                    url: 'https://myawesomewebsite.com',
+                    title: `${title} | originally posted on myawesomewebsite.com`,
+                    image: '/profile.png',
+                },
+                optional: {
+                    description: description,
+                    locale: 'en_EN',
+                    siteName: 'myawesomewebsite.com',
+                },
+            }}
         />
     </head>
     <body class="bg-neutral-100 text-sm leading-6 dark:bg-neutral-900 dark:text-white">
