@@ -1,0 +1,85 @@
+{
+    "nav": {
+        "home": "Home",
+        "link": "/"
+    },
+    "page": {
+        "title": "Katsuragawa • Software Engineer",
+        "description": "Home page of my portfolio website. Here you can find details about my professional experiences and personal projects that I have been working on in recent years."
+    },
+    "me": {
+        "title": "Product-focused Software Engineer",
+        "sub": "I build things."
+    },
+    "about": {
+        "title": "About",
+        "text": "I enjoy building dynamic, creative products from start to finish. Focused on developing intuitive experiences that constantly grow and improve based on user metrics. Always shipping."
+    },
+    "work": {
+        "title": "Work Experience",
+        "meli": {
+            "title": "Software Engineer • Mercado Livre",
+            "link": "/experiences/meli",
+            "years": "2022 - now",
+            "description": "Created new back office products for distribution centers across Latin America, used by analysts to optimize logistics and reduce costs.",
+            "tech": "React • Java • Golang • Python"
+        },
+        "prevision": {
+            "title": "Full Stack Developer • Prevision",
+            "link": "/experiences/prevision",
+            "years": "2020 - 2022",
+            "description": "Development of a web-based application for visual planning using the Lean Construction methodology, which was utilized by thousands of construction companies nationwide.",
+            "tech": "Vue • Ruby on Rails • GraphQL"
+        },
+        "freelancer": {
+            "title": "Front End Developer • Freelancer",
+            "years": "2019 - 2020",
+            "description": "Development of UI components using the React library, consuming APIs through REST and/or GraphQL.",
+            "tech": "React • Redux • Styled Components • Framer Motion"
+        },
+        "tecza": {
+            "title": "Trainee • Tecza",
+            "years": "2018 - 2019",
+            "description": "Support in overseeing the development of the construction management platform",
+            "tech": "Javascript • Python • Flask"
+        }
+    },
+    "projects": {
+        "title": "Side Projects",
+        "nextree": {
+            "title": "Nextree",
+            "years": "2022",
+            "description": "A tree-like app that helps you visualize and create your perfect folder structure.",
+            "tech": "Next.js • Typescript"
+        },
+        "krypt": {
+            "title": "Krypt",
+            "years": "2021",
+            "description": "A web 3.0 blockchain application to send crypto with a GIF.",
+            "tech": "React • Vite • Solidity"
+        },
+        "payflow": {
+            "title": "Payflow",
+            "years": "2021",
+            "description": "Mobile application for managing bills.",
+            "tech": "Flutter • Firebase"
+        },
+        "letmeask": {
+            "title": "Letmeask",
+            "years": "2020",
+            "description": "Web application to facilitate Q&A sessions during livestreams",
+            "tech": "React • Typescript • Firebase"
+        }
+    },
+    "links": {
+        "title": "Links",
+        "github": {
+            "site": "GitHub",
+            "user": "@katsuragawaa"
+        },
+        "linkedin": {
+            "site": "LinkedIn",
+            "user": "@andrekatsuragawa"
+        }
+    }
+}

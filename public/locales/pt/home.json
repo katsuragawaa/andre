@@ -1,0 +1,85 @@
+{
+    "nav": {
+        "home": "Início",
+        "link": "/pt"
+    },
+    "page": {
+        "title": "Katsuragawa • Engenheiro de Software",
+        "description": "Página inicial do site do meu portfólio. Aqui você pode encontrar detalhes sobre minhas experiências profissionais e projetos pessoais nos quais tenho trabalhado nos últimos anos."
+    },
+    "me": {
+        "title": "Engenheiro de Software com foco no produto",
+        "sub": "Eu construo coisas."
+    },
+    "about": {
+        "title": "Sobre",
+        "text": "Eu gosto de construir produtos dinâmicos e criativos do início ao fim. Focado no Desenvolvimento de experiências intuitivas que crescem e melhoram constantemente com base na métrica do usuário. Sempre entregando."
+    },
+    "work": {
+        "title": "Experiências Profissionais",
+        "meli": {
+            "title": "Engenheiro de Software • Mercado Livre",
+            "link": "/pt/experiences/meli",
+            "years": "2022 - atual",
+            "description": "Criação de novos produtos de back office para centros de distribuição em toda a América Latina, utilizados pelos analistas para otimizar a logística e reduzir custos",
+            "tech": "React • Java • Golang • Python"
+        },
+        "prevision": {
+            "title": "Desenvolvedor Full Stack • Prevision",
+            "link": "/pt/experiences/prevision",
+            "years": "2020 - 2022",
+            "description": "Desenvolvimento de uma aplicação baseada na web para planejamento visual utilizando a metodologia Lean Construction, que foi utilizada por milhares de empresas de construção em todo o país.",
+            "tech": "Vue • Ruby on Rails • GraphQL"
+        },
+        "freelancer": {
+            "title": "Desenvolvedor Front End • Freelancer",
+            "years": "2019 - 2020",
+            "description": "Desenvolvimento de componentes UI usando a biblioteca React, consumindo APIs através de REST e/ou GraphQL.",
+            "tech": "React • Redux • Styled Components • Framer Motion"
+        },
+        "tecza": {
+            "title": "Trainee • Tecza",
+            "years": "2018 - 2019",
+            "description": "Apoio na supervisão do desenvolvimento da plataforma de gestão da construção civil.",
+            "tech": "Javascript • Python • Flask"
+        }
+    },
+    "projects": {
+        "title": "Side Projects",
+        "nextree": {
+            "title": "Nextree",
+            "years": "2022",
+            "description": "Um aplicativo similar ao tree que ajuda a visualizar e criar sua estrutura de pastas perfeita",
+            "tech": "Next.js • Typescript"
+        },
+        "krypt": {
+            "title": "Krypt",
+            "years": "2021",
+            "description": "Uma aplicação de blockchain na web 3.0 para enviar criptomoedas com um GIF.",
+            "tech": "React • Vite • Solidity"
+        },
+        "payflow": {
+            "title": "Payflow",
+            "years": "2021",
+            "description": "Aplicação mobile para gerenciamento de boletos",
+            "tech": "Flutter • Firebase"
+        },
+        "letmeask": {
+            "title": "Letmeask",
+            "years": "2020",
+            "description": "Aplicação web para facilitar as sessões de perguntas e respostas durante os livestreams",
+            "tech": "React • Typescript • Firebase"
+        }
+    },
+    "links": {
+        "title": "Links",
+        "github": {
+            "site": "GitHub",
+            "user": "@katsuragawaa"
+        },
+        "linkedin": {
+            "site": "LinkedIn",
+            "user": "@andrekatsuragawa"
+        }
+    }
+}

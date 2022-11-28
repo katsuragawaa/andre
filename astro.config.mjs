@@ -1,13 +1,12 @@
 import { defineConfig } from 'astro/config';
 
-// https://astro.build/config
 import tailwind from "@astrojs/tailwind";
 
-// https://astro.build/config
 import image from "@astrojs/image";
 
-// https://astro.build/config
+import astroI18next from "astro-i18next";
+
 export default defineConfig({
     site: 'https://katsuragawaa.github.io',
-    integrations: [tailwind(), image({ serviceEntryPoint: '@astrojs/image/sharp' })]
+    integrations: [astroI18next(), tailwind(), image({ serviceEntryPoint: '@astrojs/image/sharp' })]
 });
