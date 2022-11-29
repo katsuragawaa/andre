@@ -1,7 +1,8 @@
 {
     "nav": {
         "home": "Home",
-        "link": "/"
+        "link": "/",
+        "top": "Back to top"
     },
     "page": {
         "title": "Katsuragawa • Software Engineer",
