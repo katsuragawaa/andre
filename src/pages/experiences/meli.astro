@@ -1,12 +1,39 @@
 ---
-import { changeLanguage } from "i18next";
-import Layout from "../../layouts/Layout.astro";
+import { changeLanguage } from 'i18next';
+import Layout from '../../layouts/Layout.astro';
 
-changeLanguage("en");
+changeLanguage('en');
 ---
 
 <Layout
     title="Experience • Mercado Livre"
     description="Details about the Andre Katsuragawa's performance at Mercado Livre, where he uses technologies such as React, Typescript, Java, Go (Golang) and Python.">
-    <div>meli</div>
+    <section id="links">
+        <h2 class="mb-8 text-lg">Mercado Livre</h2>
+        <div class="flex flex-col gap-4">
+            <p class="opacity-50">
+                Creation of a new back office product for distribution centers throughout Latin America.
+            </p>
+            <p class="opacity-75">Always in an agile environment.</p>
+            <p class="opacity-75">
+                Using Test Driven Development to build features as per requirements with Object-Oriented code.
+            </p>
+            <p class="opacity-75">Everyday use of Git and automated deployment with CI/CD.</p>
+            <p class="opacity-75">Containerized local development environment with Docker.</p>
+            <p class="opacity-75">
+                Code review as a standard process before deploy, aiming at developing clean code and respecting SOLID
+                principles.
+            </p>
+            <p class="mt-6 opacity-50">Things that I do:</p>
+            <ul class="ml-3 flex list-disc flex-col gap-2 opacity-75">
+                <li>Design of microservices architectures</li>
+                <li>Development of the services that make up the ecosystem of Mercado Envios in Java and Golang</li>
+                <li>Head of the team for the front end development using Server-Side Rendering in React and Node</li>
+                <li>Participation in product meetings, contributing with the project vision</li>
+                <li>Creation and monitoring of metrics of the systems used for continuous improvement</li>
+                <li>Prepare presentations and workshops on specific subjects for the development of the team</li>
+                <li>Mentor junior developers</li>
+            </ul>
+        </div>
+    </section>
 </Layout>
