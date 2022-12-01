@@ -1,5 +1,6 @@
 ---
 import { changeLanguage } from 'i18next';
+import ArrowLink from '../../components/ArrowLink.astro';
 import Layout from '../../layouts/Layout.astro';
 
 changeLanguage('en');
@@ -10,8 +11,11 @@ changeLanguage('en');
     description="Details about the Andre Katsuragawa's performance at Mercado Livre, where he uses technologies such as React, Typescript, Java, Go (Golang) and Python.">
     <section id="links">
         <h2 class="relative mb-8 text-lg">
-            Mercado Livre
-            <a id="back" href="/" class="material-icons-outlined absolute -left-12 ">west</a>
+            <a href="https://www.mercadolivre.com.br/" class="flex items-center gap-2 hover:underline"
+                >Mercado Livre
+                <ArrowLink />
+            </a>
+            <a id="back" href="/" class="material-icons-outlined absolute -left-12">west</a>
         </h2>
         <div class="flex flex-col gap-4">
             <p class="opacity-50">
