@@ -2,6 +2,4 @@
 export default {
     defaultLocale: "en",
     locales: ["en", "pt"],
-    namespaces: ["home", "meli", "prevision"],
-    defaultNamespace: "home",
 };

@@ -82,5 +82,29 @@
             "site": "LinkedIn",
             "user": "@andrekatsuragawa"
         }
+    },
+    "meli": {
+        "title": "Mercado Livre",
+        "link": "https://www.mercadolivre.com.br/",
+        "description": {
+            "a": "Criação de novos produtos de back office para centros de distribuição em toda a América Latina.",
+            "b": "Sempre em um ambiente ágil",
+            "c": "Usando o desenvolvimento Test Driven para construir funcionalidades de acordo com os requisitos e código Orientado a Objetos",
+            "d": "Uso diário de Git e lançamento automatizado com CI/CD",
+            "e": "Ambiente de desenvolvimento local conteinerizado com Docker",
+            "f": "Revisão do código como um processo padrão antes do deploy, visando desenvolver código limpo e respeitando os princípios da SOLID"
+        },
+        "bullet": {
+            "title": "Coisas que eu faço:",
+            "item": {
+                "a": "Concepção de arquiteturas de microserviços",
+                "b": "Desenvolvimento dos serviços que compõem o ecossistema do Mercado Envios em Java e Golang",
+                "c": "Responsável da equipe no desenvolvimento do front-end usando a renderização Server-Side com React and Node",
+                "d": "Participação em reuniões de produtos, contribuindo com a visão do projeto",
+                "e": "Criação e monitoramento de métricas dos sistemas utilizados para melhoria contínua",
+                "f": "Preparar apresentações e workshops sobre temas específicos para o desenvolvimento da equipe",
+                "g": "Mentoria para desenvolvedores júniors"
+            }
+        }
     }
 }

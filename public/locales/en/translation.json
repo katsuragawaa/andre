@@ -82,5 +82,29 @@
             "site": "LinkedIn",
             "user": "@andrekatsuragawa"
         }
+    },
+    "meli": {
+        "title": "Mercado Livre",
+        "link": "https://www.mercadolivre.com.br/",
+        "description": {
+            "a": "Creation of new back office products for distribution centers throughout Latin America.",
+            "b": "Always in an agile environment.",
+            "c": "Using Test Driven Development to build features as per requirements with Object-Oriented code.",
+            "d": "Everyday use of Git and automated deployment with CI/CD.",
+            "e": "Containerized local development environment with Docker.",
+            "f": "Code review as a standard process before deploy, aiming at developing clean code and respecting SOLID principles."
+        },
+        "bullet": {
+            "title": "Things that I do:",
+            "item": {
+                "a": "Design of microservices architectures",
+                "b": "Development of the services that make up the ecosystem of Mercado Envios in Java and Golang",
+                "c": "Head of the team for the front end development using Server-Side Rendering in React and Node",
+                "d": "Participation in product meetings, contributing with the project vision",
+                "e": "Creation and monitoring of metrics of the systems used for continuous improvement",
+                "f": "Prepare presentations and workshops on specific subjects for the development of the team",
+                "g": "Mentor junior developers"
+            }
+        }
     }
 }

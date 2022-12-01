@@ -1,9 +1,9 @@
 ---
-import { changeLanguage } from 'i18next';
-import ArrowLink from '../../components/ArrowLink.astro';
-import Layout from '../../layouts/Layout.astro';
+import { changeLanguage, t } from "i18next";
+import ArrowLink from "../../components/ArrowLink.astro";
+import Layout from "../../layouts/Layout.astro";
 
-changeLanguage('en');
+changeLanguage("en");
 ---
 
 <Layout
@@ -11,35 +11,29 @@ changeLanguage('en');
     description="Details about the Andre Katsuragawa's performance at Mercado Livre, where he uses technologies such as React, Typescript, Java, Go (Golang) and Python.">
     <section id="links">
         <h2 class="relative mb-8 text-lg">
-            <a href="https://www.mercadolivre.com.br/" class="flex items-center gap-2 hover:underline"
-                >Mercado Livre
+            <a href={t('meli.link')} target="_blank" class="flex items-center gap-2 hover:underline"
+                >{t('meli.title')}
                 <ArrowLink />
             </a>
-            <a id="back" href="/" class="material-icons-outlined absolute -left-12">west</a>
+            <a id="back" href={t('nav.link')} class="material-icons-outlined absolute -left-12">west</a>
         </h2>
         <div class="flex flex-col gap-4">
-            <p class="opacity-50">
-                Creation of a new back office product for distribution centers throughout Latin America.
-            </p>
-            <p class="opacity-75">Always in an agile environment.</p>
-            <p class="opacity-75">
-                Using Test Driven Development to build features as per requirements with Object-Oriented code.
-            </p>
-            <p class="opacity-75">Everyday use of Git and automated deployment with CI/CD.</p>
-            <p class="opacity-75">Containerized local development environment with Docker.</p>
-            <p class="opacity-75">
-                Code review as a standard process before deploy, aiming at developing clean code and respecting SOLID
-                principles.
-            </p>
-            <p class="mt-6 opacity-50">Things that I do:</p>
+            <p class="opacity-50">{t('meli.description.a')}</p>
+            <p class="opacity-75">{t('meli.description.b')}</p>
+            <p class="opacity-75">{t('meli.description.c')}</p>
+            <p class="opacity-75">{t('meli.description.d')}</p>
+            <p class="opacity-75">{t('meli.description.e')}</p>
+            <p class="opacity-75">{t('meli.description.f')}</p>
+
+            <p class="mt-6 opacity-50">{t('meli.bullet.title')}</p>
             <ul class="ml-3 flex list-disc flex-col gap-2 opacity-75">
-                <li>Design of microservices architectures</li>
-                <li>Development of the services that make up the ecosystem of Mercado Envios in Java and Golang</li>
-                <li>Head of the team for the front end development using Server-Side Rendering in React and Node</li>
-                <li>Participation in product meetings, contributing with the project vision</li>
-                <li>Creation and monitoring of metrics of the systems used for continuous improvement</li>
-                <li>Prepare presentations and workshops on specific subjects for the development of the team</li>
-                <li>Mentor junior developers</li>
+                <li>{t('meli.bullet.item.a')}</li>
+                <li>{t('meli.bullet.item.b')}</li>
+                <li>{t('meli.bullet.item.c')}</li>
+                <li>{t('meli.bullet.item.d')}</li>
+                <li>{t('meli.bullet.item.e')}</li>
+                <li>{t('meli.bullet.item.f')}</li>
+                <li>{t('meli.bullet.item.g')}</li>
             </ul>
         </div>
     </section>

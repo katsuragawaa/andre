@@ -1,13 +1,11 @@
 ---
-import { t, setDefaultNamespace, changeLanguage } from "i18next";
+import { t, changeLanguage } from "i18next";
 import { Image } from "@astrojs/image/components";
 import Layout from "../../layouts/Layout.astro";
 import Project from "../../components/Project.astro";
 import ArrowLink from "../../components/ArrowLink.astro";
 
 changeLanguage("pt");
-
-setDefaultNamespace("home");
 ---
 
 <Layout title={t('page.title')} description={t('page.description')}>

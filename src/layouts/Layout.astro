@@ -1,6 +1,6 @@
 ---
 import { SEO } from 'astro-seo';
-import i18next, { t, setDefaultNamespace } from 'i18next';
+import i18next, { t } from 'i18next';
 import { HeadHrefLangs } from 'astro-i18next/components';
 import '@fontsource/material-icons-outlined';
 
@@ -10,8 +10,6 @@ export interface Props {
 }
 
 const { title, description } = Astro.props;
-
-setDefaultNamespace('home');
 
 const isEnglish = i18next.language === 'en';
 ---
