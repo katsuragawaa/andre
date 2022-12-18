@@ -1,5 +1,6 @@
 ---
-import { changeLanguage } from "i18next";
+import { t, changeLanguage } from "i18next";
+import ArrowLink from "../../components/ArrowLink.astro";
 import Layout from "../../layouts/Layout.astro";
 
 changeLanguage("en");
@@ -8,5 +9,30 @@ changeLanguage("en");
 <Layout
     title="Experience • Prevision"
     description="Information about the passage of Andre Katsuragawa at Prevision, where he worked and further developed his skills in Vue, Javascript and Ruby on Rails">
-    <div>prevision</div>
+    <section id="links">
+        <h2 class="relative mb-8 text-lg">
+            <a href={t('prevision.link')} target="_blank" class="flex items-center gap-2 hover:underline"
+                >{t('prevision.title')}
+                <ArrowLink />
+            </a>
+            <a id="back" href={t('nav.link')} class="material-icons-outlined absolute -left-12">west</a>
+        </h2>
+        <div class="flex flex-col gap-4">
+            <p class="opacity-50">{t('prevision.description.a')}</p>
+            <p class="opacity-75">{t('prevision.description.b')}</p>
+            <p class="opacity-75">{t('prevision.description.c')}</p>
+
+            <p class="mt-6 opacity-50">{t('prevision.bullet.title')}</p>
+            <ul class="ml-3 flex list-disc flex-col gap-2 opacity-75">
+                <li>{t('prevision.bullet.item.a')}</li>
+                <li>{t('prevision.bullet.item.b')}</li>
+            </ul>
+        </div>
+    </section>
 </Layout>
+<style>
+    #back {
+        font-size: 20px;
+        top: 4px;
+    }
+</style>

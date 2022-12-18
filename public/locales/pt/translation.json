@@ -106,5 +106,21 @@
                 "g": "Mentoria para desenvolvedores júniors"
             }
         }
+    },
+    "prevision": {
+        "title": "Prevision",
+        "link": "https://www.prevision.com.br/",
+        "description": {
+            "a": "Desenvolvimento de uma aplicação web para planejamento visual utilizando a metodologia Lean Construction.",
+            "b": "Utilizou Vue.js e Ruby on Rails para desenvolver a Prevision.",
+            "c": "Colaborou com o Chefe de Produto para acompanhar os objetivos táticos, melhorar as direções técnicas e aumentar a frequência de lançamentos."
+        },
+        "bullet": {
+            "title": "Coisas que eu fiz:",
+            "item": {
+                "a": "Projetei e desenvolvi uma nova camada de informação para o planejamento de construção detalhado, incluindo novas tabelas de dados e pontos finais de API, bem como um design de front-end melhorado",
+                "b": "Otimizei uma funcionalidade que tinha alta latência, reduzindo o tempo de carregamento em quase 80% através de consultas SQL eficientes e cálculos melhorados"
+            }
+        }
     }
 }

@@ -106,5 +106,21 @@
                 "g": "Mentor junior developers"
             }
         }
+    },
+    "prevision": {
+        "title": "Prevision",
+        "link": "https://www.prevision.com.br/",
+        "description": {
+            "a": "Development of a web-based application for visual planning using the Lean Construction methodology.",
+            "b": "Utilized Vue.js and Ruby on Rails to develop Prevision.",
+            "c": "Collaborated with the Head of Product to track tactical objectives, improve technical directions, and increase shipping frequency."
+        },
+        "bullet": {
+            "title": "Things that I did:",
+            "item": {
+                "a": "Designed and developed a new layer of information for detailed construction planning, including new data tables and API endpoints, as well as improved front-end design",
+                "b": "Optimized a feature that had high latency, reducing load time by almost 80% through efficient SQL queries and improved calculations"
+            }
+        }
     }
 }
