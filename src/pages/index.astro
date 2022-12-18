@@ -1,15 +1,15 @@
 ---
-import { t, changeLanguage } from "i18next";
-import { Image } from "@astrojs/image/components";
-import Layout from "../layouts/Layout.astro";
-import Project from "../components/Project.astro";
-import ArrowLink from "../components/ArrowLink.astro";
+import { t, changeLanguage } from 'i18next'
+import { Image } from '@astrojs/image/components'
+import Layout from '../layouts/Layout.astro'
+import Project from '../components/Project.astro'
+import ArrowLink from '../components/ArrowLink.astro'
 
-changeLanguage("en");
+changeLanguage('en')
 ---
 
 <Layout title={t('page.title')} description={t('page.description')}>
-    <section id="me" class="mb-14 grid grid-cols-4 grid-rows-1 gap-x-4">
+    <section id="me" class="mb-14 flex flex-col gap-8 sm:grid sm:grid-cols-4 sm:grid-rows-1 sm:gap-x-4">
         <Image
             src="/profile.png"
             height="612"
